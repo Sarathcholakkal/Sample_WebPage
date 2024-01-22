@@ -23,6 +23,7 @@ class _HeaderState extends State<Header> {
         Text(
           lays,
           style: TextStyle(
+              fontFamily: "Pacifico",
               fontSize: MediaQuery.of(context).textScaler.scale(43),
               color: Colors.white),
         ),

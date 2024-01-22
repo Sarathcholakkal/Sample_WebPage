@@ -11,7 +11,7 @@ const flavoursTitle = [
 ];
 const aboutPageText = "";
 //==============image collections============//
-const laysImages = [];
+const laysImages = ["assets/images/redlays.jpg", "assets/images/yellow.jpg"];
 
 //===========Colors======================//
 const black = Color(0xff000000);

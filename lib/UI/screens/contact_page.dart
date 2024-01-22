@@ -27,11 +27,26 @@ class ContactPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Header(currentPageId: id),
+            const Header(currentPageId: id),
             SizedBox(
               child: Container(
-                child: Text(
-                    'lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+                width: MediaQuery.of(context).size.width * .9,
+                height: MediaQuery.of(context).size.height * .7,
+                decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    border: Border.all(
+                        color: Colors.white,
+                        width: 2,
+                        strokeAlign: BorderSide.strokeAlignOutside)),
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: const Center(
+                    child: Text(
+                      'lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+                      style: TextStyle(color: Colors.cyanAccent, fontSize: 30),
+                    ),
+                  ),
+                ),
               ),
             )
           ],
